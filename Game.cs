@@ -10,6 +10,11 @@ namespace Game_Git_Demo
         {
             WriteLine("Welcome to the Game");
 
+            Write("\nWhat is you name?");
+            string name = ReadLine();
+            Player currentPlayer = new Player(name);
+            WriteLine($"Let's get started {currentPlayer.Name}!");
+
             WriteLine("\nPress any key to exit...");
             ReadKey(true);
         }
